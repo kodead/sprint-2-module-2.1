@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects and Arrays</h1>
+    <script>
+    console.log('hello world')
+    let user = { name: 'jane', born: 1977, isHappy: false}
+    let name = user.name
+    console.log(name)
+    user.hobbies = ['hiking', 'fishing']
+    console.log(user)
+    function makeAnimal (name, age, species) {
+        let animal = {}
+        animal.name = name
+        animal.age = age
+        animal.species = species
+        return animal
+    }
+    let plane = {model: undefined}
+    if(plane.model) {
+        console.log('has model prop (which is a truthy)')
+    }
+    if(plane.model !== undefined) {
+        console.log('has model prop (which is not undefined)')
+    }
+    let arr = ['a', 'b', 'c', 45, true]
+    let first = arr[0]
+    let second = arr[1]
+    let last = arr[arr.length -1]
+    console.log(first, second, last)
+    function evenOrOdd() {
+    let isEven = arr.length % 2 === 0
+    let isOdd = arr.length % 2 !== 0
+    if(isEven) {
+        console.log('arr is even')
+    } else if (isOdd) { console.log('arr is odd')}
+    }
+    </script>
+</body>
+</html>

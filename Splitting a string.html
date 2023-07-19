@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Splitting a string into an array
+    </h1>
+    <script>
+        /*
+    // splitting words into characters //
+    const name = 'Paris';
+    const characters = name.split(''); // splitting by empty string //
+    console.log(characters); // prints ['P', 'a', 'r', 'i', 's']
+// when you want to separate a string with one or more white spaces, you will
+// you will use a string with a single space ' ' as a seperator
+const sentence = 'Paris is on my bucket list to visit!';
+const words = sentence.split(' '); // splitting by whitespace
+console.log(words); // prints ['Paris', 'is', 'on', 'my', 'bucket', 'list', 'to', 'visit!']
+    */
+    </script>
+    <h2>
+        Basic Looping
+        <script>
+            const arrayName = ["item1", "item2", "item3"] //creating a simple array
+            for(let i in arrayName) { //loops through all indices in the array //
+                console.log(i, arrayName[i]) // prints out index position and item number
+            }
+            const cocoMart = ["Bananas", "Milk", "Eggs", "Bread", "Yogurt"] // created Coco Mart array
+            for(let i in cocoMart) { // Declares "i" as variable index name, loops through items in cocoMart array
+            console.log(`${cocoMart[i]} is now available!`)
+
+            }
+            const foodItem = {
+                name: 'banana', price: 2.99, availability: false
+            }
+            for(let property in foodItem) {
+                property === 'price'
+                console.log(`this product costs $${foodItem['price']}`)
+            }
+            const sampleObject = {propertyA: 'value1', propertyB: 'value2', propertyC: 'value3'
+
+            }
+            for(let property in sampleObject) {
+              console.log(property)
+                console.log(sampleObject[property])
+            }
+
+        </script>
+    </h2>
+</body>
+</html>
